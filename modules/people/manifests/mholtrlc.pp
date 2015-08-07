@@ -32,11 +32,6 @@ class people::mholtrlc {
     provider    => compressed_app,
   }
 
-  package { 'Atom':
-    provider => compressed_app,
-    source   => 'puppet:///modules/people/atom-mac.zip',
-  }
-
 
 
   $home     = "/Users/${::boxen_user}"
