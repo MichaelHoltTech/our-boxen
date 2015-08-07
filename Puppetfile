@@ -62,6 +62,6 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 github "osx",	"2.8.0"
 github "iterm2", "1.2.5"
-github "dockutil", :repo => "grahamgilbert/puppet-dockutil"
+#github "dockutil", :repo => "grahamgilbert/puppet-dockutil"
 github "caffeine", "1.0.0"
 github "osxfuse", "1.2.0", :repo => "grahamgilbert/puppet-osxfuse"
