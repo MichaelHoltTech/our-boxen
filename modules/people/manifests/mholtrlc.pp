@@ -1,8 +1,4 @@
 class people::mholtrlc {
-  ruby::gem { 'librarian-puppet for 2.2.1':
-    gem  => 'librarian-puppet',
-    ruby => '2.2.1',
-  }
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::global::tap_to_click
