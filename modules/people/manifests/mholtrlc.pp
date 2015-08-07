@@ -1,4 +1,8 @@
 class people::mholtrlc {
+  ruby::gem { 'librarian-puppet for 2.2.1':
+    gem  => 'librarian-puppet',
+    ruby => '2.2.1',
+  }
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::global::tap_to_click
@@ -9,9 +13,6 @@ class people::mholtrlc {
   include iterm2::dev
   include caffeine
   include osxfuse
-  ruby::gem { 'librarian-puppet for 1.9.3':
-		gem  => 'librarian-puppet',
-		ruby => '1.9.3',
   package{ 'zsh': }
   package{ 'htop-osx': }
   package{ 'tree': }
