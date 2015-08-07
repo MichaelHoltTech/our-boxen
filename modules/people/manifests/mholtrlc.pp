@@ -10,7 +10,7 @@ class people::mholtrlc {
   include caffeine
   include osxfuse
   
-  include atom
+  #include atom
 
   package{ 'zsh': }
   package{ 'htop-osx': }
@@ -30,6 +30,11 @@ class people::mholtrlc {
   package { 'Kaleidoscope':
     source      => 'http://cdn.kaleidoscopeapp.com/releases/Kaleidoscope-2.0.1-114.zip',
     provider    => compressed_app,
+  }
+
+  package { 'Atom':
+    provider => compressed_app,
+    source   => 'https://atom.io/download/mac',
   }
 
 
