@@ -9,7 +9,9 @@ class people::mholtrlc {
   include iterm2::dev
   include caffeine
   include osxfuse
-
+  ruby::gem { 'librarian-puppet for 1.9.3':
+		gem  => 'librarian-puppet',
+		ruby => '1.9.3',
   package{ 'zsh': }
   package{ 'htop-osx': }
   package{ 'tree': }
