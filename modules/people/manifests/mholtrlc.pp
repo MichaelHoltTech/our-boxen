@@ -9,14 +9,14 @@ class people::mholtrlc {
   include iterm2::dev
   include caffeine
   include osxfuse
+  
+  include atom
+
   package{ 'zsh': }
   package{ 'htop-osx': }
   package{ 'tree': }
   package{ 'graphviz': }
-  package{ 'ext4fuse':
-      require => Class['osxfuse'],
-      ensure  => latest,
-   }
+
   package { 'Pacifist':
     source   => 'http://www.charlessoft.com/pacifist_download/Pacifist_3.5.4.dmg',
     provider => appdmg,
@@ -27,11 +27,11 @@ class people::mholtrlc {
       source   => 'https://github.com/hjuutilainen/munkiadmin/releases/download/v1.2.1/MunkiAdmin-1.2.1.dmg',
   }
 
-  package { 'sshfs':
-      provider => 'pkgdmg',
-      source   => 'https://github.com/osxfuse/sshfs/releases/download/osxfuse-sshfs-2.5.0/sshfs-2.5.0.pkg',
-      require  => Class['osxfuse'],
+  package { 'Kaleidoscope':
+    source      => 'http://cdn.kaleidoscopeapp.com/releases/Kaleidoscope-2.0.1-114.zip',
+    provider    => compressed_app,
   }
+
 
 
   $home     = "/Users/${::boxen_user}"
