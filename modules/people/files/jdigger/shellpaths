@@ -1,0 +1,27 @@
+#!/bin/sh
+
+########################################################################
+# Shell agnostic path setup
+########################################################################
+
+# Michael's Scripts
+export PATH=$PATH:.
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/.dotfiles/scripts
+
+# Brew
+export PATH=/opt/boxen/homebrew/sbin:$PATH
+
+# MacPorts
+## Having MacPorts first instead of after $PATH causes a GitK error
+## http://stackoverflow.com/questions/2629292/starting-gitk-error
+export PATH=$PATH:/opt/local/bin
+export PATH=$PATH:/opt/local/sbin
+export MANPATH=$MANPATH:/opt/local/share/man
+
+export PATH=$PATH:$APPENGINE_HOME/bin
+
+# Dev
+export PATH=~/.rbenv/bin:$PATH
+
+

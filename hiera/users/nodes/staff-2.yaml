@@ -1,0 +1,4 @@
+---
+boxen::security::require_password: true
+people::mholtrlc::system_roles:
+  - personal
