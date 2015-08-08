@@ -28,7 +28,7 @@ export CASE_SENSITIVE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx brew bundler gradle gem ssh-agent ruby cloudapp cake rbenv)
+plugins=(osx brew bundler gradle gem ssh-agent ruby compleat dircycle dirhistory git-extras sudo terminalapp rbenv git atom  )
 
 source $ZSH/oh-my-zsh.sh
 
