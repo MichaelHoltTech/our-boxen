@@ -1,0 +1,41 @@
+---
+classes:
+  - projects::developer
+
+# See https://github.com/boxen/puppet-java for docs
+java::update_version: 55
+
+# See https://github.com/boxen/puppet-intellij for docs
+intellij::edition: 'ultimate'
+intellij::version: '13.1.2'
+
+# "Sublime" is not in the name and alphabetized to make it easier to track
+sublime_text_2::packages:
+  'AsciiDoc':
+    source: 'SublimeText/AsciiDoc'
+  'BracketHighlighter':
+    source: 'facelessuser/BracketHighlighter'
+  'CodeIntel':
+    source: 'SublimeCodeIntel/SublimeCodeIntel'
+  'Emmet':
+    source: 'sergeche/emmet-sublime'
+  'Git':
+    source: 'kemayo/sublime-text-git'
+  'GitGutter':
+    source: 'jisaacks/GitGutter'
+  'IndentXML':
+    source: 'alek-sys/sublimetext_indentxml'
+  'Linter':
+    source: 'SublimeLinter/SublimeLinter'
+  'Package Control':
+    source: 'wbond/sublime_package_control'
+  'Prefixr':
+    source: 'wbond/sublime_prefixr'
+  'PrettyJson':
+    source: 'dzhibas/SublimePrettyJson'
+  'Puppet':
+    source: 'russCloak/SublimePuppet'
+  'SideBarEnhancements':
+    source: 'titoBouzout/SideBarEnhancements'
+  'Sublime Linter':
+    source: 'SublimeLinter/SublimeLinter'
