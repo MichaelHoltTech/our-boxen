@@ -9,7 +9,7 @@ class people::mholtrlc::applications::general {
   include 'caffeine'
   include 'chrome'
   include 'cyberduck'
-  include 'docker'
+  #include 'docker'
   include 'firefox'
   include 'git'
   include 'iterm2::stable'
