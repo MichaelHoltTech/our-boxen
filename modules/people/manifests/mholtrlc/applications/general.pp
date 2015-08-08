@@ -8,7 +8,7 @@ class people::mholtrlc::applications::general {
   include 'augeas'
   include 'caffeine'
   include 'chrome'
-  include 'cyberduck'
+  #include 'cyberduck'
   #include 'docker'
   include 'firefox'
   include 'git'
