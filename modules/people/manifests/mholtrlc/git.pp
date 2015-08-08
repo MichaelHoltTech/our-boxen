@@ -16,7 +16,7 @@ class people::mholtrlc::git (
   $_system_roles = hiera_array('people::mholtrlc::system_roles')
   $roles = $system_roles ? { undef => $_system_roles, default => $system_roles}
 
-  require people::mholtrlc::dotfiles
+  #require people::mholtrlc::dotfiles
 
   include git
   include people::mholtrlc::git::global
