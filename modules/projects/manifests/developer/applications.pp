@@ -6,7 +6,7 @@ class projects::developer::applications {
 
   include 'chrome'
   include 'firefox'
-  include 'intellij'
+  #include 'intellij'
   include 'iterm2::stable'
   include 'p4merge'
   include 'packages::git_process'
