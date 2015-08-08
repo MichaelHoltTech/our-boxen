@@ -7,15 +7,18 @@
 # a file named hiera/common.yaml, and individuals can supplement and/or override
 # them in hiera/{github_login}.yaml
 
-:backends:
-  - yaml
-:yaml:
-  :datadir: "%{::boxen_home}/repo/hiera"
-:hierarchy:
-  - "users/%{::github_login}/nodes/%{::hostname}"
-  - "users/%{::github_login}/nodes/common"
-  - "users/%{::github_login}"
-  - common
+#
+# See http://docs.puppetlabs.com/hiera/1/configuring.html
+# See http://docs.puppetlabs.com/hiera/1/puppet.html
+#
+# For example, on "jdigger"'s work MBP he has a "fact" defined
+#   as {::boxen_project_01 => 'developer'}
+# That means that the following files are merged:
+# 
+# people/jdigger/nodes/Jims-MacBook-Pro-2.yaml  # hostname
+# people/jdigger/nodes/common.yaml
+# people/jdigger.yaml
+# projects/developer.yaml
 
 # Many modules make their own hiera data available through the use of
 # puppet-module-data. Some depend on the 'deeper' merge_behavior setting, so
@@ -24,3 +27,25 @@
 # besides the modules that use it, you might want to override deeply nested hash
 # values, too!
 :merge_behavior: deeper
+
+:backends:
+  - yaml
+:yaml:
+  :datadir: "%{::boxen_home}/repo/hiera"
+
+:hierarchy:
+  - "users/%{::github_login}/nodes/%{::hostname}"
+  - "users/%{::github_login}/nodes/common"
+  - "users/%{::github_login}"
+  - "projects/%{::boxen_project_01}"
+  - "projects/%{::boxen_project_02}"
+  - "projects/%{::boxen_project_03}"
+  - "projects/%{::boxen_project_04}"
+  - "projects/%{::boxen_project_05}"
+  - "projects/%{::boxen_project_06}"
+  - "projects/%{::boxen_project_07}"
+  - "projects/%{::boxen_project_08}"
+  - "projects/%{::boxen_project_09}"
+  - "projects/%{::boxen_project_10}"
+  - "projects/common"
+  - common
