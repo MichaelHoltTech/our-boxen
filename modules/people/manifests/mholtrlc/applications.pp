@@ -22,7 +22,8 @@ class people::mholtrlc::applications (
     include 'people::mholtrlc::applications::work'
   }
   elsif member($roles, 'personal') {
-    include 'people::mholtrlc::applications::personal'
+    #include 'people::mholtrlc::applications::personal'
+    notify {"${roles_str} applications not configured yet" :}
   }
 
 }
