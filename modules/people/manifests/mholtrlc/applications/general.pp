@@ -14,7 +14,7 @@ class people::mholtrlc::applications::general {
   include 'git'
   include 'iterm2::stable'
   include 'kindle'
-  include 'launchbar'
+  #include 'launchbar'
   #include 'mongodb'
   #include 'nodejs::global'
   include 'packages::asciidoc'
