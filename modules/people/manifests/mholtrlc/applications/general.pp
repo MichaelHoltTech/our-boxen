@@ -13,7 +13,7 @@ class people::mholtrlc::applications::general {
   include 'firefox'
   include 'git'
   include 'iterm2::stable'
-  include 'kindle'
+  #include 'kindle'
   #include 'launchbar'
   #include 'mongodb'
   #include 'nodejs::global'
@@ -24,10 +24,10 @@ class people::mholtrlc::applications::general {
   include 'skitch'
   include 'skype'
   include 'sourcetree'
-  include 'sublime_text_2'
+  #include 'sublime_text_2'
   include 'tmux'
-  include 'vagrant'
-  include 'virtualbox'
+  #include 'vagrant'
+  #include 'virtualbox'
   include 'zsh'
 
   #package{ 'zsh': }
