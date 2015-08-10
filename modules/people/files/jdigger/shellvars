@@ -8,4 +8,4 @@
 # Set textmate as our default command line editor
 #export EDITOR='mate -w'
 # Set Sublime as our default command line editor
-export EDITOR='subl'
+export EDITOR='att'

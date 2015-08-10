@@ -11,8 +11,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in $ZSH/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="robbyrussell"
-#export ZSH_THEME="random"
+#ZSH_THEME="powerlevel9k"
+export ZSH_THEME="ys"
 
 # Set to this to use case-sensitive completion
 export CASE_SENSITIVE="true"
@@ -35,10 +35,12 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 unsetopt correct_all
 
-unalias run-help
-autoload run-help
-HELPDIR=/opt/boxen/homebrew/share/zsh/helpfiles
+#unalias run-help
+#autoload run-help
+#HELPDIR=/opt/boxen/homebrew/share/zsh/helpfiles
 
 source /opt/boxen/env.sh
 
-eval "$(jenv init -)"
+#eval "$(jenv init -)"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
