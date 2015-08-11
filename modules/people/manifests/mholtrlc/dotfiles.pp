@@ -13,7 +13,7 @@ class people::mholtrlc::dotfiles {
   $home = "/Users/${::boxen_user}"
 
   repository { 'oh-my-zsh' :
-    source => 'https://github.com/mholtrlc/oh-my-zsh.git',
+    source => 'https://github.com/MichaelHoltTech/oh-my-zsh.git',
     path   => "${home}/.oh-my-zsh",
   }
 
